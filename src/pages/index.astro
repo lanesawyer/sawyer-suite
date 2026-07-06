@@ -1,0 +1,34 @@
+---
+import { Box, Button } from "astro-bulma";
+import Layout from "../layouts/Layout.astro";
+import { apps } from "../apps";
+---
+
+<Layout title="Sawyer Suite">
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <p class="title">Sawyer Suite</p>
+      <p class="subtitle">Little apps for everyday life</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-multiline">
+        {
+          apps.map((app) => (
+            <div class="column is-half">
+              <Box>
+                <p class="title is-4">{app.name}</p>
+                <p class="subtitle is-6">{app.description}</p>
+                <Button href={app.url} color="link">
+                  Open {app.name}
+                </Button>
+              </Box>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Layout>
