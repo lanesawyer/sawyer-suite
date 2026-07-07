@@ -17,8 +17,7 @@ export const apps: App[] = [
   },
   {
     name: "Dibs",
-    description:
-      "A list for couples who want to keep track of all the things to do together.",
+    description: "A list for couples who want to keep track of all the things to do together.",
     url: "https://dibs.lanesawyer.dev/",
   },
   {
