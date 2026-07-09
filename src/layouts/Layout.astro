@@ -1,5 +1,7 @@
 ---
+import { ClientRouter } from "astro:transitions";
 import "bulma/css/bulma.min.css";
+import { ThemeToggle } from "astro-bulma";
 
 interface Props {
   title: string;
@@ -16,8 +18,12 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ClientRouter />
   </head>
   <body>
+    <header class="is-flex is-justify-content-flex-end p-3">
+      <ThemeToggle />
+    </header>
     <slot />
   </body>
 </html>
