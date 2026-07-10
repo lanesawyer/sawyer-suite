@@ -1,3 +1,7 @@
+# First-party package — skip pnpm's minimum-release-age freshness gate.
+minimumReleaseAgeExclude:
+  - astro-bulma
+
 allowBuilds:
   esbuild: true
   sharp: true
