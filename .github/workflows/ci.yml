@@ -16,6 +16,16 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
 
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/setup@v1
+        with:
+          cache: true
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm check
+
   lint:
     runs-on: ubuntu-latest
     steps:
