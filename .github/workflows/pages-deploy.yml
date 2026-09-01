@@ -21,7 +21,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/setup@v1
+      - uses: pnpm/setup@v2
         with:
           cache: true
       - run: pnpm install --frozen-lockfile
