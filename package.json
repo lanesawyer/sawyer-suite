@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "astro": "7.1.6",
-    "astro-bulma": "^0.4.0",
+    "astro-bulma": "^0.5.0",
     "bulma": "^1.0.4"
   },
   "devDependencies": {
