@@ -20,7 +20,7 @@
     "bulma": "^1.0.4"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.10",
+    "@astrojs/check": "0.9.12",
     "oxfmt": "0.62.0",
     "oxlint": "1.85.0",
     "typescript": "6.0.3",
